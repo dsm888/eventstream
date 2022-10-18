@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+logging:
+  level:
+    org.springframework.data.r2dbc: Debug
+---
+spring:
+  profiles: test
+---
+spring:
+  profiles: prod
+  logging:
+    level:
+      org.springframework.data.r2dbc: Debug
+
